@@ -1,0 +1,14 @@
+# Copy of ultralytics/cfg/trackers/ocsort.yaml (docs: https://docs.ultralytics.com/modes/track#tracker-selection)
+# OC-SORT re-corrects the motion model when a lost person is re-found, which halves the number of
+# fragments the running staff member is split into (14 vs 29 with ByteTrack on the sample clip).
+# Only the thresholds are changed: COCO "person" scores are low in a top-down fisheye view (0.1-0.3).
+tracker_type: ocsort # (str) Tracker backend: ocsort; observation-centric SORT for robust multi-object tracking
+track_high_thresh: 0.12 # (float) First-stage match threshold; raise for cleaner tracks, lower to keep more
+track_low_thresh: 0.05 # (float) Second-stage threshold for low-score matches; only used when use_byte=True
+new_track_thresh: 0.15 # (float) Start a new track if no match ≥ this; higher reduces false tracks
+track_buffer: 50 # (int) Frames to keep lost tracks alive; higher handles occlusion, increases ID switches risk
+match_thresh: 0.8 # (float) Association similarity threshold (IoU/cost); tune with detector quality
+fuse_score: True # (bool) Fuse detection score with motion/IoU for matching; stabilizes weak detections
+delta_t: 3 # (int) Temporal window for velocity direction computation in OCM; higher smooths more
+inertia: 0.2 # (float) Weight of velocity consistency cost in association; higher penalizes direction changes
+use_byte: False # (bool) Enable ByteTrack-style low-confidence second association pass

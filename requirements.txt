@@ -1,0 +1,7 @@
+ultralytics>=8.4
+opencv-python-headless>=4.9
+numpy
+lap
+matplotlib
+gradio>=5
+imageio-ffmpeg

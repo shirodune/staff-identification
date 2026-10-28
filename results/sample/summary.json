@@ -1,0 +1,39 @@
+{
+ "args": {
+  "video": "/tmp/sample.mp4",
+  "out": "results/sample",
+  "person_conf": 0.05,
+  "person_imgsz": 960,
+  "badge_conf": 0.3,
+  "speed": 30,
+  "gap": 40,
+  "min_hits": 5,
+  "from_dets": "results/sample/person_dets.csv",
+  "no_video": true
+ },
+ "frames": 1341,
+ "staff": [
+  {
+   "tracks": [
+    1358,
+    1482,
+    1650,
+    1676,
+    1868,
+    1993,
+    2184,
+    3117,
+    3380,
+    3434,
+    4072,
+    4355,
+    4441,
+    4503
+   ],
+   "hits": 177,
+   "first": 377,
+   "last": 1209
+  }
+ ],
+ "runtime_s": 2
+}

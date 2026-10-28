@@ -1,0 +1,34 @@
+{
+ "all_frames": {
+  "frames": 1341,
+  "tp": 770,
+  "fp": 0,
+  "fn": 571,
+  "tn": 0,
+  "precision": 1.0,
+  "recall": 0.5742,
+  "f1": 0.7295,
+  "accuracy": 0.5742
+ },
+ "clear_frames": {
+  "frames": 932,
+  "tp": 770,
+  "fp": 0,
+  "fn": 162,
+  "tn": 0,
+  "precision": 1.0,
+  "recall": 0.8262,
+  "f1": 0.9048,
+  "accuracy": 0.8262
+ },
+ "badge_visible_frames": 122,
+ "localisation": {
+  "frames_with_xy_gt": 588,
+  "within_tol": 222,
+  "wrong_position": 313,
+  "no_prediction": 53,
+  "tol_px": 80,
+  "localisation_acc": 0.3776,
+  "median_err_px": 445.5
+ }
+}
